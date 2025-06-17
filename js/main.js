@@ -142,31 +142,69 @@ const initializeSmoothScrolling = () => {
     });
 };
 
-// Mobile menu functionality
+// Enhanced Mobile menu functionality with sliding animation
 const initializeMobileMenu = () => {
     const navLinks = $('.nav-links');
-    if (!navLinks) return;
+    const mobileToggle = $('.mobile-menu-toggle');
+    
+    if (!navLinks || !mobileToggle) return;
 
-    const updateMobileMenu = () => {
-        const isMobile = window.innerWidth <= 768;
-        navLinks.classList.toggle('mobile-menu', isMobile);
+    let isMenuOpen = false;
+
+    const toggleMenu = () => {
+        isMenuOpen = !isMenuOpen;
+        navLinks.classList.toggle('active', isMenuOpen);
+        mobileToggle.classList.toggle('active', isMenuOpen);
         
-        if (isMobile && !navLinks.querySelector('.mobile-toggle')) {
-            const toggle = document.createElement('button');
-            toggle.className = 'mobile-toggle btn-primary';
-            toggle.innerHTML = '<i class="fas fa-bars"></i>';
-            toggle.style.cssText = 'margin-left: auto; padding: 8px 12px;';
-            
-            toggle.addEventListener('click', () => {
-                navLinks.classList.toggle('mobile-open');
-            });
-            
-            navLinks.appendChild(toggle);
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+        
+        // Announce state change for accessibility
+        mobileToggle.setAttribute('aria-expanded', isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        if (isMenuOpen) {
+            isMenuOpen = false;
+            navLinks.classList.remove('active');
+            mobileToggle.classList.remove('active');
+            document.body.style.overflow = '';
+            mobileToggle.setAttribute('aria-expanded', 'false');
         }
     };
 
-    updateMobileMenu();
-    window.addEventListener('resize', updateMobileMenu);
+    // Toggle menu on hamburger click
+    mobileToggle.addEventListener('click', toggleMenu);
+
+    // Close menu when clicking on nav links
+    $$('.nav-links a').forEach(link => {
+        link.addEventListener('click', closeMenu);
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+        if (isMenuOpen && !navLinks.contains(e.target) && !mobileToggle.contains(e.target)) {
+            closeMenu();
+        }
+    });
+
+    // Close menu on escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && isMenuOpen) {
+            closeMenu();
+        }
+    });
+
+    // Close menu on window resize to desktop
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768 && isMenuOpen) {
+            closeMenu();
+        }
+    });
+
+    // Set initial ARIA attributes
+    mobileToggle.setAttribute('aria-expanded', 'false');
+    mobileToggle.setAttribute('aria-label', 'Toggle navigation menu');
 };
 
 // Enhanced WHMCS integration
