@@ -30,6 +30,26 @@
     z-index: 2;
 }
 
+/* Domain Illustration */
+.domain-illustration {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    justify-content: center;
+}
+
+.animated-domains {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(255, 255, 255, 0.1));
+    animation: float 8s ease-in-out infinite;
+}
+
+.animated-domains:hover {
+    animation-play-state: paused;
+    transform: scale(1.05);
+}
+
 .domain-hero h1 {
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
@@ -308,7 +328,19 @@
     border: 2px solid transparent;
     position: relative;
     overflow: hidden;
+    animation: float 5s ease-in-out infinite;
+    animation-delay: calc(var(--i, 0) * 0.2s);
 }
+
+.domain-feature-card:nth-child(1) { --i: 0; }
+.domain-feature-card:nth-child(2) { --i: 1; }
+.domain-feature-card:nth-child(3) { --i: 2; }
+.domain-feature-card:nth-child(4) { --i: 3; }
+.domain-feature-card:nth-child(5) { --i: 4; }
+.domain-feature-card:nth-child(6) { --i: 5; }
+.domain-feature-card:nth-child(7) { --i: 6; }
+.domain-feature-card:nth-child(8) { --i: 7; }
+.domain-feature-card:nth-child(9) { --i: 8; }
 
 .domain-feature-card::before {
     content: '';
@@ -321,9 +353,10 @@
 }
 
 .domain-feature-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-12px) scale(1.02);
     box-shadow: var(--shadow-xl);
     border-color: var(--accent-teal);
+    animation-play-state: paused;
 }
 
 .domain-feature-card .feature-icon {
@@ -416,13 +449,21 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 180px;
+    animation: pulse 3s ease-in-out infinite;
+    animation-delay: calc(var(--i, 0) * 0.4s);
 }
 
+.price-item:nth-child(1) { --i: 0; }
+.price-item:nth-child(2) { --i: 1; }
+.price-item:nth-child(3) { --i: 2; }
+.price-item:nth-child(4) { --i: 3; }
+
 .price-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.03);
     background: var(--white);
     border-color: var(--secondary-orange);
     box-shadow: var(--shadow-lg);
+    animation-play-state: paused;
 }
 
 .price-item .tld {
@@ -775,6 +816,7 @@
 
     .domain-feature-card {
         padding: var(--spacing-lg);
+        animation: none; /* Disable animations on mobile for performance */
     }
 
     .bulk-checker {
@@ -783,5 +825,13 @@
 
     .transfer-form {
         padding: var(--spacing-lg);
+    }
+
+    .animated-domains {
+        animation: none; /* Disable complex animations on mobile */
+    }
+
+    .price-item {
+        animation: none; /* Disable animations on mobile for performance */
     }
 } 

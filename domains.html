@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Domain Registration - Afrilink Telecoms (Pty) Ltd</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/Afrlink Telecoms suggested logo 512.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/Afrlink Telecoms suggested logo.png">
+    <link rel="apple-touch-icon" href="images/Afrlink Telecoms suggested logo 512.png">
+    <meta name="theme-color" content="#0B1426">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/domains.css">
@@ -28,6 +32,74 @@
     <main>
         <section class="domain-hero">
             <div class="domain-hero-content">
+                <div class="domain-illustration">
+                    <svg viewBox="0 0 300 200" class="animated-domains">
+                        <defs>
+                            <linearGradient id="domainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#FF6B35"/>
+                                <stop offset="100%" style="stop-color:#F39C12"/>
+                            </linearGradient>
+                            <filter id="domainGlow">
+                                <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+                                <feMerge> 
+                                    <feMergeNode in="coloredBlur"/>
+                                    <feMergeNode in="SourceGraphic"/>
+                                </feMerge>
+                            </filter>
+                        </defs>
+                        
+                        <!-- Floating Domain Names -->
+                        <g class="floating-domains">
+                            <g transform="translate(50,50)">
+                                <rect x="-25" y="-10" width="50" height="20" rx="10" fill="url(#domainGradient)" filter="url(#domainGlow)">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0;10,-5;0,0" dur="3s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="0" y="3" text-anchor="middle" fill="white" font-size="8" font-weight="bold">.com</text>
+                            </g>
+                            
+                            <g transform="translate(150,40)">
+                                <rect x="-30" y="-10" width="60" height="20" rx="10" fill="#3498DB" filter="url(#domainGlow)">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0;-8,8;0,0" dur="4s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="0" y="3" text-anchor="middle" fill="white" font-size="8" font-weight="bold">.co.za</text>
+                            </g>
+                            
+                            <g transform="translate(220,70)">
+                                <rect x="-25" y="-10" width="50" height="20" rx="10" fill="#27AE60" filter="url(#domainGlow)">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0;5,10;0,0" dur="3.5s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="0" y="3" text-anchor="middle" fill="white" font-size="8" font-weight="bold">.net</text>
+                            </g>
+                            
+                            <g transform="translate(80,120)">
+                                <rect x="-25" y="-10" width="50" height="20" rx="10" fill="#9B59B6" filter="url(#domainGlow)">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0;12,-3;0,0" dur="2.8s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="0" y="3" text-anchor="middle" fill="white" font-size="8" font-weight="bold">.org</text>
+                            </g>
+                            
+                            <g transform="translate(180,130)">
+                                <rect x="-30" y="-10" width="60" height="20" rx="10" fill="#E74C3C" filter="url(#domainGlow)">
+                                    <animateTransform attributeName="transform" type="translate" values="0,0;-6,6;0,0" dur="4.2s" repeatCount="indefinite"/>
+                                </rect>
+                                <text x="0" y="3" text-anchor="middle" fill="white" font-size="8" font-weight="bold">.online</text>
+                            </g>
+                        </g>
+                        
+                        <!-- Connection Lines -->
+                        <g class="connection-lines" stroke="#00A8CC" stroke-width="2" fill="none" opacity="0.6">
+                            <path d="M75 60 Q 150 80 175 50">
+                                <animate attributeName="stroke-dasharray" values="0,100;30,70;0,100" dur="3s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M170 50 Q 200 85 195 120">
+                                <animate attributeName="stroke-dasharray" values="0,100;25,75;0,100" dur="3.5s" repeatCount="indefinite"/>
+                            </path>
+                            <path d="M105 130 Q 140 125 155 140">
+                                <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="2.8s" repeatCount="indefinite"/>
+                            </path>
+                        </g>
+                    </svg>
+                </div>
                 <h1>Domain Name Search and Register</h1>
                 <p>At Afrilink Telecoms we make domain registration easy and inexpensive. Register your domain today!</p>
                 
