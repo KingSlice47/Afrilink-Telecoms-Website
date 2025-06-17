@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="result-content">
                 <strong>${domain}</strong> is ${isAvailable ? 'available!' : 'not available'}
                 ${isAvailable ? 
-                    `<button class="register-btn" onclick="window.location.href='https://your-whmcs-url.com/cart.php?a=add&domain=register&query=${domain}'">
+                    `<button class="register-btn" onclick="window.location.href='https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&domain=register&query=${domain}'">
                         Register Now
                     </button>` : 
                     '<p>Try another domain name or check suggestions below</p>'}
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>${domain}</span>
             <span>${isAvailable ? 'Available' : 'Not Available'}</span>
             ${isAvailable ? 
-                `<button class="register-btn" onclick="window.location.href='https://your-whmcs-url.com/cart.php?a=add&domain=register&query=${domain}'">
+                `<button class="register-btn" onclick="window.location.href='https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&domain=register&query=${domain}'">
                     Register
                 </button>` : 
                 ''}
@@ -151,4 +151,40 @@ document.addEventListener('DOMContentLoaded', () => {
         
         searchInput.value = value;
     });
+
+    // Domain Transfer functionality
+    const transferBtn = document.querySelector('.transfer-btn');
+    const transferInput = document.getElementById('transferDomain');
+    
+    if (transferBtn && transferInput) {
+        transferBtn.addEventListener('click', () => {
+            const domain = transferInput.value.trim();
+            
+            if (domain) {
+                // Show loading state
+                transferBtn.innerHTML = '<span class="loading"></span>';
+                
+                // Simulate transfer check
+                setTimeout(() => {
+                    // In a real implementation, this would check with your domain API
+                    alert(`Transfer check initiated for ${domain}. Please check your email for further instructions.`);
+                    transferBtn.textContent = 'Check Transfer';
+                    transferInput.value = '';
+                }, 1500);
+            } else {
+                transferInput.placeholder = 'Please enter a domain name';
+                transferInput.classList.add('error');
+                setTimeout(() => {
+                    transferInput.classList.remove('error');
+                    transferInput.placeholder = 'Enter domain name to transfer';
+                }, 2000);
+            }
+        });
+        
+        transferInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                transferBtn.click();
+            }
+        });
+    }
 }); 

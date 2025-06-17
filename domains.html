@@ -18,9 +18,9 @@
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="index.html#hosting">Hosting</a>
-                <a href="#domains" class="active">Domains</a>
-                <a href="#contact">Contact</a>
-                <a href="https://your-whmcs-url.com/client" class="client-area">Client Area</a>
+                <a href="domains.html" class="active">Domains</a>
+                <a href="index.html#contact">Contact</a>
+                <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea" class="client-area">Client Area</a>
             </div>
         </nav>
     </header>
@@ -52,9 +52,9 @@
                         </div>
                         <div id="searchResult" class="search-result"></div>
                         <div class="search-options">
-                            <a href="#transfer" class="option-btn"><i class="fas fa-exchange-alt"></i> Transfer Domain</a>
-                            <a href="#bulk" class="option-btn"><i class="fas fa-list"></i> Bulk Search</a>
-                            <a href="#multi" class="option-btn"><i class="fas fa-globe"></i> Multiple TLDs</a>
+                            <a href="#domain-transfer" class="option-btn"><i class="fas fa-exchange-alt"></i> Transfer Domain</a>
+                            <a href="#domain-checker" class="option-btn"><i class="fas fa-list"></i> Bulk Search</a>
+                            <a href="#domain-pricing" class="option-btn"><i class="fas fa-globe"></i> Multiple TLDs</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +138,7 @@
             </div>
         </section>
 
-        <section class="domain-pricing">
+        <section id="domain-pricing" class="domain-pricing">
             <h2>Domain Pricing</h2>
             <div class="pricing-tabs">
                 <button class="tab-btn active" data-tab="popular">Popular Domains</button>
@@ -196,12 +196,36 @@
             </div>
         </section>
 
-        <section class="domain-checker">
+        <section id="domain-checker" class="domain-checker">
             <h2>Bulk Domain Checker</h2>
             <div class="bulk-checker">
                 <textarea id="bulkDomains" placeholder="Enter up to 10 domain names to check&#10;Example:&#10;mydomain.co.za&#10;mybusiness.com&#10;mysite.net"></textarea>
                 <button class="check-btn">Check Availability</button>
                 <div id="bulkResults" class="bulk-results"></div>
+            </div>
+        </section>
+
+        <section id="domain-transfer" class="domain-transfer">
+            <h2>Domain Transfer</h2>
+            <div class="transfer-content">
+                <div class="transfer-info">
+                    <h3>Transfer Your Domain to Afrilink Telecoms</h3>
+                    <p>Moving your domain to Afrilink Telecoms is easy and secure. Transfer your domain and enjoy our reliable DNS hosting, easy management tools, and competitive pricing.</p>
+                    <ul class="transfer-benefits">
+                        <li><i class="fas fa-check"></i> Keep your current website running during transfer</li>
+                        <li><i class="fas fa-check"></i> Free DNS hosting included</li>
+                        <li><i class="fas fa-check"></i> Easy-to-use control panel</li>
+                        <li><i class="fas fa-check"></i> 24/7 expert support</li>
+                    </ul>
+                </div>
+                <div class="transfer-form">
+                    <h3>Start Your Transfer</h3>
+                    <div class="domain-transfer-search">
+                        <input type="text" placeholder="Enter domain name to transfer" id="transferDomain">
+                        <button class="transfer-btn">Check Transfer</button>
+                    </div>
+                    <p class="transfer-note">You'll need your domain's authorization code (EPP code) to complete the transfer.</p>
+                </div>
             </div>
         </section>
     </main>
@@ -217,8 +241,8 @@
             <div class="footer-section">
                 <h3>Quick Links</h3>
                 <a href="index.html#hosting">Hosting Plans</a>
-                <a href="#domains">Domain Search</a>
-                <a href="https://your-whmcs-url.com/client">Client Area</a>
+                <a href="domains.html">Domain Search</a>
+                <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea">Client Area</a>
             </div>
         </div>
         <div class="footer-bottom">
