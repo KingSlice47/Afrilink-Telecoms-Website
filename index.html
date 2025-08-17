@@ -64,9 +64,6 @@
                     <a href="domains.html">Domains</a>
                 </div>
                 <div class="nav-item">
-                    <a href="fibre.html">Fibre & Network</a>
-                </div>
-                <div class="nav-item">
                     <a href="about-us.html">About</a>
                 </div>
                 <div class="nav-item dropdown">
@@ -131,180 +128,84 @@
     </div>
 
     <main>
-        <!-- HERO SECTION WITH ALL ORIGINAL ANIMATIONS PRESERVED -->
-        <section class="hero section-lg bg-primary-800">
+        <!-- HERO SECTION -->
+        <section class="hero section bg-primary-800">
             <div class="hero-overlay"></div>
             <div class="container">
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    <!-- ORIGINAL ANIMATED SERVER ILLUSTRATION -->
-                    <div class="hero-illustration animate-slideInLeft">
-                        <div class="server-animation">
-                            <svg viewBox="0 0 400 300" class="animated-servers">
-                                <!-- Server Rack -->
-                                <defs>
-                                    <linearGradient id="serverGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#3498DB"/>
-                                        <stop offset="100%" style="stop-color:#2980B9"/>
-                                    </linearGradient>
-                                    <linearGradient id="screenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" style="stop-color:#27AE60"/>
-                                        <stop offset="100%" style="stop-color:#2ECC71"/>
-                                    </linearGradient>
-                                    <filter id="glow">
-                                        <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
-                                        <feMerge> 
-                                            <feMergeNode in="coloredBlur"/>
-                                            <feMergeNode in="SourceGraphic"/>
-                                        </feMerge>
-                                    </filter>
-                                </defs>
-                                
-                                <!-- Background Servers -->
-                                <rect x="50" y="80" width="80" height="140" rx="8" fill="url(#serverGradient)" opacity="0.8">
-                                    <animate attributeName="opacity" values="0.8;1;0.8" dur="3s" repeatCount="indefinite"/>
-                                </rect>
-                                <rect x="150" y="60" width="80" height="160" rx="8" fill="url(#serverGradient)" opacity="0.7">
-                                    <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
-                                </rect>
-                                <rect x="250" y="90" width="80" height="130" rx="8" fill="url(#serverGradient)" opacity="0.9">
-                                    <animate attributeName="opacity" values="0.9;1;0.9" dur="3.5s" repeatCount="indefinite"/>
-                                </rect>
-                                
-                                <!-- Server Details -->
-                                <g class="server-lights">
-                                    <!-- Server 1 Lights -->
-                                    <circle cx="70" cy="100" r="3" fill="#27AE60" filter="url(#glow)">
-                                        <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
-                                    </circle>
-                                    <circle cx="80" cy="100" r="3" fill="#E74C3C">
-                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.5s" repeatCount="indefinite"/>
-                                    </circle>
-                                    <circle cx="90" cy="100" r="3" fill="#F39C12">
-                                        <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
-                                    </circle>
-                                    
-                                    <!-- Server 2 Lights -->
-                                    <circle cx="170" cy="80" r="3" fill="#27AE60" filter="url(#glow)">
-                                        <animate attributeName="opacity" values="0.5;1;0.5" dur="1.2s" repeatCount="indefinite"/>
-                                    </circle>
-                                    <circle cx="180" cy="80" r="3" fill="#27AE60">
-                                        <animate attributeName="opacity" values="1;0.2;1" dur="0.8s" repeatCount="indefinite"/>
-                                    </circle>
-                                    
-                                    <!-- Server 3 Lights -->
-                                    <circle cx="270" cy="110" r="3" fill="#27AE60" filter="url(#glow)">
-                                        <animate attributeName="opacity" values="1;0.4;1" dur="1.8s" repeatCount="indefinite"/>
-                                    </circle>
-                                    <circle cx="280" cy="110" r="3" fill="#3498DB">
-                                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.2s" repeatCount="indefinite"/>
-                                    </circle>
-                                </g>
-                                
-                                <!-- Data Flow Lines -->
-                                <g class="data-flow" stroke="#FF6B35" stroke-width="2" fill="none" opacity="0.8">
-                                    <path d="M130 150 Q 200 120 270 150">
-                                        <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="2s" repeatCount="indefinite"/>
-                                        <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
-                                    </path>
-                                    <path d="M130 170 Q 200 200 270 170">
-                                        <animate attributeName="stroke-dasharray" values="0,100;20,80;0,100" dur="2.5s" repeatCount="indefinite"/>
-                                        <animate attributeName="opacity" values="0.6;1;0.6" dur="2.5s" repeatCount="indefinite"/>
-                                    </path>
-                                </g>
-                                
-                                <!-- Floating Icons -->
-                                <g class="floating-icons">
-                                    <g transform="translate(100,40)">
-                                        <circle cx="0" cy="0" r="15" fill="rgba(255,255,255,0.1)" stroke="#FF6B35" stroke-width="2">
-                                            <animateTransform attributeName="transform" type="translate" values="0,0;10,-10;0,0" dur="3s" repeatCount="indefinite"/>
-                                        </circle>
-                                        <text x="0" y="5" text-anchor="middle" fill="#FF6B35" font-size="12" font-family="FontAwesome">⚡</text>
-                                    </g>
-                                    <g transform="translate(300,40)">
-                                        <circle cx="0" cy="0" r="15" fill="rgba(255,255,255,0.1)" stroke="#27AE60" stroke-width="2">
-                                            <animateTransform attributeName="transform" type="translate" values="0,0;-10,-5;0,0" dur="4s" repeatCount="indefinite"/>
-                                        </circle>
-                                        <text x="0" y="5" text-anchor="middle" fill="#27AE60" font-size="12" font-family="FontAwesome">🔒</text>
-                                    </g>
-                                    <g transform="translate(200,250)">
-                                        <circle cx="0" cy="0" r="15" fill="rgba(255,255,255,0.1)" stroke="#3498DB" stroke-width="2">
-                                            <animateTransform attributeName="transform" type="translate" values="0,0;15,5;0,0" dur="3.5s" repeatCount="indefinite"/>
-                                        </circle>
-                                        <text x="0" y="5" text-anchor="middle" fill="#3498DB" font-size="12" font-family="FontAwesome">☁</text>
-                                    </g>
-                                </g>
-                            </svg>
+                    <!-- SIMPLE HERO ILLUSTRATION -->
+                    <div class="hero-illustration">
+                        <div class="hosting-visual bg-white bg-opacity-10 rounded-2xl p-8">
+                            <div class="hosting-interface">
+                                <div class="interface-header bg-white bg-opacity-20 rounded-lg p-4 mb-4">
+                                    <div class="flex items-center gap-2 mb-2">
+                                        <div class="w-3 h-3 bg-red-400 rounded-full"></div>
+                                        <div class="w-3 h-3 bg-yellow-400 rounded-full"></div>
+                                        <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                                    </div>
+                                    <div class="text-white opacity-80 text-sm">cPanel Control Panel</div>
+                                </div>
+                                <div class="interface-content space-y-3">
+                                    <div class="bg-white bg-opacity-15 rounded p-3">
+                                        <div class="text-white text-sm font-semibold">Website Statistics</div>
+                                        <div class="text-white opacity-70 text-xs">View your site performance</div>
+                                    </div>
+                                    <div class="bg-white bg-opacity-15 rounded p-3">
+                                        <div class="text-white text-sm font-semibold">File Manager</div>
+                                        <div class="text-white opacity-70 text-xs">Manage your website files</div>
+                                    </div>
+                                    <div class="bg-white bg-opacity-15 rounded p-3">
+                                        <div class="text-white text-sm font-semibold">Email Accounts</div>
+                                        <div class="text-white opacity-70 text-xs">Create and manage emails</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <!-- ENHANCED HERO CONTENT WITH ORIGINAL ANIMATIONS -->
-                    <div class="hero-content animate-slideInRight">
+                    <!-- HERO CONTENT -->
+                    <div class="hero-content">
                         <div class="hero-text">
-                            <h1 class="heading-display text-white mb-4">Professional Web Hosting Solutions</h1>
-                            <p class="text-lead text-white mb-8">South Africa's Leading Web Hosting Provider</p>
+                            <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">The Best Web Hosting in South Africa</h1>
+                            <p class="text-lg text-white mb-3">Get a powerful Web Hosting platform for your website at affordable prices.</p>
+                            <p class="text-base text-white opacity-90 mb-6">Experience the security, reliability and performance of the best cPanel Web Hosting in South Africa.</p>
                         </div>
                         
-                        <!-- ENHANCED FEATURED PLAN CARD -->
-                        <div class="card card-glass card-hover p-6">
-                            <div class="featured-badge bg-secondary-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block animate-pulse">
-                                Most Popular
+                        <!-- PRICING HIGHLIGHT -->
+                        <div class="pricing-highlight mb-6">
+                            <p class="text-lg text-white">Get your website and brand online from only <span class="text-secondary-400 font-bold text-xl">R109</span><span class="text-white opacity-80">/mo</span></p>
+                        </div>
+                        
+                        <!-- FEATURE LIST WITH ICONS -->
+                        <div class="hero-features space-y-3 mb-8">
+                            <div class="feature-item flex items-center gap-3 text-white">
+                                <div class="feature-icon bg-white bg-opacity-20 rounded-lg p-2">
+                                    <i class="fas fa-cog text-secondary-400 text-lg"></i>
+                                </div>
+                                <span class="text-base font-medium">cPanel Control Panel</span>
                             </div>
-                            <h2 class="heading-3 text-white mb-4">Super Hosting</h2>
-                            
-                            <!-- Enhanced Price Display with Toggle -->
-                            <div class="price-container mb-6">
-                                <div class="billing-toggle-mini mb-4">
-                                    <span class="billing-option-mini monthly active">Monthly</span>
-                                    <label class="toggle-switch-mini">
-                                        <input type="checkbox" id="hero-billing-toggle">
-                                        <span class="toggle-slider-mini"></span>
-                                    </label>
-                                    <span class="billing-option-mini annual">Annual <span class="save-badge-mini">-25%</span></span>
+                            <div class="feature-item flex items-center gap-3 text-white">
+                                <div class="feature-icon bg-white bg-opacity-20 rounded-lg p-2">
+                                    <i class="fas fa-cloud text-secondary-400 text-lg"></i>
                                 </div>
-                                
-                                <div class="price">
-                                    <span class="currency text-secondary-500 text-xl font-semibold">R</span>
-                                    <span class="amount text-white text-5xl font-bold monthly-price">249</span>
-                                    <span class="amount text-white text-5xl font-bold annual-price" style="display: none;">187</span>
-                                    <span class="cents text-white text-xl font-semibold">.99</span>
-                                    <span class="period text-white opacity-80 text-base ml-2">/month</span>
-                                </div>
-                                
-                                <div class="annual-savings text-center" style="display: none;">
-                                    <span class="save-amount bg-success-100 text-success-700 px-3 py-1 rounded-full text-sm font-semibold">
-                                        Save R744 annually!
-                                    </span>
-                                </div>
+                                <span class="text-base font-medium">Unlimited Traffic</span>
                             </div>
-                            
-                            <ul class="featured-features space-y-2 mb-8">
-                                <li class="flex items-center gap-3 text-white">
-                                    <i class="fas fa-check text-success-500"></i> 100 GB NVMe Storage
-                                </li>
-                                <li class="flex items-center gap-3 text-white">
-                                    <i class="fas fa-check text-success-500"></i> 100 Email Accounts
-                                </li>
-                                <li class="flex items-center gap-3 text-white">
-                                    <i class="fas fa-check text-success-500"></i> 30 MySQL Databases
-                                </li>
-                                <li class="flex items-center gap-3 text-white">
-                                    <i class="fas fa-check text-success-500"></i> Free SSL Certificates
-                                </li>
-                                <li class="flex items-center gap-3 text-white">
-                                    <i class="fas fa-check text-success-500"></i> 99.9% Uptime Guarantee
-                                </li>
-                                <li class="flex items-center gap-3 text-white">
-                                    <i class="fas fa-check text-success-500"></i> 30-Day Money Back
-                                </li>
-                            </ul>
-                            
-                            <a href="#hosting" class="btn btn-lg btn-secondary hover-lift w-full">
+                            <div class="feature-item flex items-center gap-3 text-white">
+                                <div class="feature-icon bg-white bg-opacity-20 rounded-lg p-2">
+                                    <i class="fas fa-globe text-secondary-400 text-lg"></i>
+                                </div>
+                                <span class="text-base font-medium">Free Domain Registration</span>
+                            </div>
+                        </div>
+                        
+                        <!-- CTA BUTTONS -->
+                        <div class="hero-cta flex flex-col sm:flex-row gap-4">
+                            <a href="#hosting" class="btn btn-lg btn-secondary hover-lift">
                                 <i class="fas fa-rocket"></i> Get Started Now
                             </a>
-                            
-                            <p class="text-center text-white opacity-70 text-sm mt-3">
-                                <i class="fas fa-shield-alt"></i> 30-day money-back guarantee
-                            </p>
+                            <a href="#hosting" class="btn btn-lg btn-outline-white hover-lift">
+                                <i class="fas fa-eye"></i> View All Plans
+                            </a>
                         </div>
                     </div>
                 </div>

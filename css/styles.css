@@ -31,12 +31,13 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(135deg, rgba(11, 20, 38, 0.95) 0%, rgba(52, 152, 219, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(11, 20, 38, 0.98) 0%, rgba(30, 61, 89, 0.95) 100%);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: var(--z-fixed);
     transition: all var(--transition-base);
+    box-shadow: 0 4px 20px rgba(11, 20, 38, 0.3);
 }
 
 .header.scrolled {
@@ -54,13 +55,14 @@ body {
 }
 
 .logo h1 {
-    background: linear-gradient(135deg, var(--color-white), rgba(255, 255, 255, 0.8));
+    background: linear-gradient(135deg, var(--color-white) 0%, var(--color-secondary-400) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: var(--text-2xl);
     font-weight: var(--font-bold);
     margin-bottom: 0;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .nav-links {
@@ -70,22 +72,29 @@ body {
 }
 
 .nav-links a {
-    color: var(--color-white);
+    color: rgba(255, 255, 255, 0.95);
     text-decoration: none;
     font-weight: var(--font-medium);
-    padding: var(--space-2) var(--space-3);
+    padding: var(--space-2) var(--space-4);
     border-radius: var(--radius-lg);
     transition: all var(--transition-fast);
     position: relative;
+    border: 1px solid transparent;
 }
 
 .nav-links a:hover {
-    color: var(--color-secondary-500);
-    background: rgba(255, 107, 53, 0.1);
+    color: var(--color-white);
+    background: rgba(255, 107, 53, 0.15);
+    border-color: rgba(255, 107, 53, 0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.2);
 }
 
 .nav-links a.active {
-    color: var(--color-secondary-500);
+    color: var(--color-white);
+    background: rgba(255, 107, 53, 0.2);
+    border-color: rgba(255, 107, 53, 0.4);
+    box-shadow: 0 2px 8px rgba(255, 107, 53, 0.3);
 }
 
 .client-area {
@@ -189,16 +198,14 @@ body {
 }
 
 .server-animation,
-.domain-illustration,
-.fibre-illustration {
+.domain-illustration {
     width: 100%;
     max-width: 400px;
     height: auto;
 }
 
 .animated-servers,
-.animated-domains,
-.animated-fibre {
+.animated-domains {
     width: 100%;
     height: auto;
     filter: drop-shadow(0 10px 30px rgba(255, 255, 255, 0.1));
@@ -206,8 +213,7 @@ body {
 }
 
 .animated-servers:hover,
-.animated-domains:hover,
-.animated-fibre:hover {
+.animated-domains:hover {
     transform: scale(1.02);
     filter: drop-shadow(0 15px 40px rgba(255, 255, 255, 0.2));
 }
@@ -289,6 +295,33 @@ body {
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Enhanced Section Styling */
+.section {
+    position: relative;
+    overflow: hidden;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(255, 107, 53, 0.02) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.section.bg-gray-50::before {
+    background: radial-gradient(circle at 50% 100%, rgba(11, 20, 38, 0.02) 0%, transparent 50%);
+}
+
+/* Tab and Section Enhancements */
+.nav-item.dropdown:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-lg);
 }
 
 /* Custom animations */
@@ -439,8 +472,50 @@ select:focus {
     }
     
     .animated-servers,
-    .animated-domains,
-    .animated-fibre {
+    .animated-domains {
         filter: none;
     }
+}
+
+/* ========================================
+   HERO FEATURES STYLING
+   ======================================== */
+
+.hero-features {
+    margin: 1.5rem 0;
+}
+
+.feature-item {
+    opacity: 1;
+}
+
+.feature-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover .feature-icon {
+    transform: scale(1.05);
+    background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+.pricing-highlight {
+    opacity: 1;
+}
+
+.hero-cta {
+    opacity: 1;
+}
+
+.hosting-visual {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.hero-content {
+    padding: 2rem 0;
 }
