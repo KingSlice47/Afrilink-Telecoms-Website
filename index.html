@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="images/Afrlink Telecoms suggested logo 512.png">
     <meta name="theme-color" content="#0B1426">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/main.js" defer></script>
 </head>
@@ -35,10 +36,11 @@
     </header>
 
     <main>
-        <section class="hero">
+        <section class="hero section-lg bg-primary-800">
             <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <div class="hero-illustration">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    <div class="hero-illustration animate-slideInLeft">
                     <div class="server-animation">
                         <svg viewBox="0 0 400 300" class="animated-servers">
                             <!-- Server Rack -->
@@ -136,315 +138,399 @@
                             </g>
                         </svg>
                     </div>
-                </div>
-                <div class="hero-right">
-                    <div class="hero-text">
-                        <h1>Professional Web Hosting Solutions</h1>
-                        <p>South Africa's Leading Web Hosting Provider</p>
                     </div>
-                    <div class="featured-plan">
-                        <div class="featured-badge">Most Popular</div>
-                        <h2>Super Hosting</h2>
-                        <div class="price-tag">
+                    <div class="hero-content animate-slideInRight">
+                        <div class="hero-text">
+                            <h1 class="heading-display text-white mb-4">Professional Web Hosting Solutions</h1>
+                            <p class="text-lead text-white mb-8">South Africa's Leading Web Hosting Provider</p>
+                        </div>
+                        <div class="card card-glass card-hover p-6">
+                            <div class="featured-badge bg-secondary-500 text-white px-4 py-2 rounded-full text-sm font-semibold mb-4 inline-block">Most Popular</div>
+                            <h2 class="heading-3 text-white mb-4">Super Hosting</h2>
+                            <div class="price mb-6">
+                                <span class="currency text-secondary-500 text-xl font-semibold">R</span>
+                                <span class="amount text-white text-5xl font-bold">289</span>
+                                <span class="cents text-white text-xl font-semibold">.99</span>
+                                <span class="period text-white opacity-80 text-base ml-2">/month</span>
+                            </div>
+                            <ul class="featured-features space-y-2 mb-8">
+                                <li class="flex items-center gap-3 text-white">
+                                    <i class="fas fa-check text-success-500"></i> 100 GB NVMe Storage
+                                </li>
+                                <li class="flex items-center gap-3 text-white">
+                                    <i class="fas fa-check text-success-500"></i> 100 Email Accounts
+                                </li>
+                                <li class="flex items-center gap-3 text-white">
+                                    <i class="fas fa-check text-success-500"></i> 30 MySQL Databases
+                                </li>
+                                <li class="flex items-center gap-3 text-white">
+                                    <i class="fas fa-check text-success-500"></i> Free SSL Certificates
+                                </li>
+                                <li class="flex items-center gap-3 text-white">
+                                    <i class="fas fa-check text-success-500"></i> 99.9% Uptime Guarantee
+                                </li>
+                            </ul>
+                            <a href="#hosting" class="btn btn-lg btn-secondary hover-lift w-full">Get Started Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hosting" class="section bg-gray-50">
+            <div class="container">
+                <h2 class="heading-2 text-center mb-12">Our Hosting Plans</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card card-pricing card-hover">
+                        <h3 class="heading-4 mb-4">Entry Hosting</h3>
+                        <div class="price mb-6">
                             <span class="currency">R</span>
-                            <span class="amount">289</span>
+                            <span class="amount">119</span>
                             <span class="cents">.99</span>
                             <span class="period">/month</span>
                         </div>
-                        <ul class="featured-features">
-                            <li><i class="fas fa-check"></i> 100 GB NVMe Storage</li>
-                            <li><i class="fas fa-check"></i> 100 Email Accounts</li>
-                            <li><i class="fas fa-check"></i> 30 MySQL Databases</li>
-                            <li><i class="fas fa-check"></i> Free SSL Certificates</li>
-                            <li><i class="fas fa-check"></i> 99.9% Uptime Guarantee</li>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                25 GB NVMe Storage
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                25 Email Accounts
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                10 MySQL Databases
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                Free SSL Certificates
+                            </li>
                         </ul>
-                        <a href="#hosting" class="cta-button">Get Started Now</a>
+                        <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=entry" class="btn btn-lg btn-outline-primary hover-lift w-full">Buy Now</a>
+                    </div>
+
+                    <div class="card card-pricing card-hover">
+                        <h3 class="heading-4 mb-4">Basic Hosting</h3>
+                        <div class="price mb-6">
+                            <span class="currency">R</span>
+                            <span class="amount">179</span>
+                            <span class="cents">.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                50 GB NVMe Storage
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                50 Email Accounts
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                20 MySQL Databases
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                Free SSL Certificates
+                            </li>
+                        </ul>
+                        <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=basic" class="btn btn-lg btn-outline-primary hover-lift w-full">Buy Now</a>
+                    </div>
+
+                    <div class="card card-pricing card-hover featured border-2 border-secondary-500 transform scale-105">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-secondary-500 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                        </div>
+                        <h3 class="heading-4 mb-4 text-secondary-600">Super Hosting</h3>
+                        <div class="price mb-6">
+                            <span class="currency text-secondary-500">R</span>
+                            <span class="amount text-secondary-600">289</span>
+                            <span class="cents text-secondary-600">.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                100 GB NVMe Storage
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                100 Email Accounts
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                30 MySQL Databases
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                Free SSL Certificates
+                            </li>
+                        </ul>
+                        <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=super" class="btn btn-lg btn-secondary hover-lift w-full">Buy Now</a>
+                    </div>
+
+                    <div class="card card-pricing card-hover">
+                        <h3 class="heading-4 mb-4">Ultimate Hosting</h3>
+                        <div class="price mb-6">
+                            <span class="currency">R</span>
+                            <span class="amount">349</span>
+                            <span class="cents">.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                200 GB NVMe Storage
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                200 Email Accounts
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                40 MySQL Databases
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                Free SSL Certificates
+                            </li>
+                        </ul>
+                        <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=ultimate" class="btn btn-lg btn-outline-primary hover-lift w-full">Buy Now</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="hosting" class="pricing">
-            <h2>Our Hosting Plans</h2>
-            <div class="pricing-container">
-                <div class="pricing-card entry">
-                    <h3>Entry Hosting</h3>
-                    <div class="price">
-                        <span class="currency">R</span>
-                        <span class="amount">119</span>
-                        <span class="cents">.99</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="features">
-                        <li>25 GB NVMe Storage</li>
-                        <li>25 Email Accounts</li>
-                        <li>10 MySQL Databases</li>
-                        <li>Free SSL Certificates</li>
-                    </ul>
-                    <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=entry" class="buy-now">Buy Now</a>
-                </div>
-
-                <div class="pricing-card basic">
-                    <h3>Basic Hosting</h3>
-                    <div class="price">
-                        <span class="currency">R</span>
-                        <span class="amount">179</span>
-                        <span class="cents">.99</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="features">
-                        <li>50 GB NVMe Storage</li>
-                        <li>50 Email Accounts</li>
-                        <li>20 MySQL Databases</li>
-                        <li>Free SSL Certificates</li>
-                    </ul>
-                    <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=basic" class="buy-now">Buy Now</a>
-                </div>
-
-                <div class="pricing-card super">
-                    <h3>Super Hosting</h3>
-                    <div class="price">
-                        <span class="currency">R</span>
-                        <span class="amount">289</span>
-                        <span class="cents">.99</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="features">
-                        <li>100 GB NVMe Storage</li>
-                        <li>100 Email Accounts</li>
-                        <li>30 MySQL Databases</li>
-                        <li>Free SSL Certificates</li>
-                    </ul>
-                    <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=super" class="buy-now">Buy Now</a>
-                </div>
-
-                <div class="pricing-card ultimate">
-                    <h3>Ultimate Hosting</h3>
-                    <div class="price">
-                        <span class="currency">R</span>
-                        <span class="amount">349</span>
-                        <span class="cents">.99</span>
-                        <span class="period">/month</span>
-                    </div>
-                    <ul class="features">
-                        <li>200 GB NVMe Storage</li>
-                        <li>200 Email Accounts</li>
-                        <li>40 MySQL Databases</li>
-                        <li>Free SSL Certificates</li>
-                    </ul>
-                    <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=cart&a=add&pid=ultimate" class="buy-now">Buy Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="website-builder">
-            <div class="builder-content">
-                <h2>Build a stunning website with our DIY Website Builder</h2>
-                <div class="builder-features">
-                    <div class="builder-feature">
-                        <div class="feature-icon">
+        <section class="section">
+            <div class="container">
+                <h2 class="heading-2 text-center mb-12">Build a stunning website with our DIY Website Builder</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-palette"></i>
                         </div>
-                        <h3>200+ Template Designs</h3>
-                        <p>Professional templates for every industry</p>
+                        <h3 class="card-title">200+ Template Designs</h3>
+                        <p class="card-text">Professional templates for every industry</p>
                     </div>
-                    <div class="builder-feature">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-mobile-alt"></i>
                         </div>
-                        <h3>Responsive Design</h3>
-                        <p>Websites that look great on all devices</p>
+                        <h3 class="card-title">Responsive Design</h3>
+                        <p class="card-text">Websites that look great on all devices</p>
                     </div>
-                    <div class="builder-feature">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-puzzle-piece"></i>
                         </div>
-                        <h3>Drag and Drop Plugins</h3>
-                        <p>Easy-to-use interface for quick customization</p>
+                        <h3 class="card-title">Drag and Drop Plugins</h3>
+                        <p class="card-text">Easy-to-use interface for quick customization</p>
                     </div>
-                    <div class="builder-feature">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-search"></i>
                         </div>
-                        <h3>SEO-Friendly</h3>
-                        <p>Built-in tools to improve your search rankings</p>
+                        <h3 class="card-title">SEO-Friendly</h3>
+                        <p class="card-text">Built-in tools to improve your search rankings</p>
                     </div>
                 </div>
-                <div class="builder-cta">
-                    <p>Simply add Website Builder when ordering your Web Hosting plan.</p>
-                    <a href="#hosting" class="get-started">Get Started Now</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="features">
-            <h2>Why Choose Afrilink Telecoms?</h2>
-            <div class="features-grid">
-                <div class="feature">
-                    <h3>High-Performance NVMe Storage</h3>
-                    <p>Lightning-fast storage solutions for optimal website performance</p>
-                </div>
-                <div class="feature">
-                    <h3>24/7 Technical Support</h3>
-                    <p>Expert support team available round the clock</p>
-                </div>
-                <div class="feature">
-                    <h3>99.9% Uptime Guarantee</h3>
-                    <p>Reliable hosting infrastructure you can count on</p>
-                </div>
-                <div class="feature">
-                    <h3>cPanel Control Panel</h3>
-                    <p>User-friendly interface for easy website management</p>
+                <div class="text-center mt-12">
+                    <p class="text-lg mb-6">Simply add Website Builder when ordering your Web Hosting plan.</p>
+                    <a href="#hosting" class="btn btn-lg btn-secondary hover-lift">Get Started Now</a>
                 </div>
             </div>
         </section>
 
-        <section class="hosting-features">
-            <div class="hosting-features-content">
-                <h2>What's Included in our Hosting Packages</h2>
-                <div class="features-grid-detailed">
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-globe"></i>
+        <section class="section bg-gray-50">
+            <div class="container">
+                <h2 class="heading-2 text-center mb-12">Why Choose Afrilink Telecoms?</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-hdd"></i>
                         </div>
-                        <h3>Free Domain Registration</h3>
-                        <p>Free domain included – choose from .co.za, .site, .online & more with any hosting plan.</p>
+                        <h3 class="card-title">High-Performance NVMe Storage</h3>
+                        <p class="card-text">Lightning-fast storage solutions for optimal website performance</p>
                     </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-server"></i>
-                        </div>
-                        <h3>cPanel Control Panel</h3>
-                        <p>South Africa's best web hosting includes award-winning cPanel for full, easy website management.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Smart Malware Protection</h3>
-                        <p>Our plans includes multi-layered security with Imunify360, CSF, and Monarx to protect against malware, viruses, and bot attacks.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <h3>Hosted in Joburg</h3>
-                        <p>Africa's fastest hosting—powered by local infrastructure & multi-network redundancy!</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-lock"></i>
-                        </div>
-                        <h3>Free SSL Certificates</h3>
-                        <p>Boost customer trust with free Let's Encrypt SSL certificates on all hosted websites.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
-                            <i class="fas fa-bolt"></i>
-                        </div>
-                        <h3>LiteSpeed Web Server</h3>
-                        <p>Our web hosting uses LiteSpeed – the world's fastest web server – for lightning-fast website loading.</p>
-                    </div>
-
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-headset"></i>
                         </div>
-                        <h3>Premium Support</h3>
-                        <p>The best web hosting in South Africa includes expert, friendly support ready to assist you 24/7.</p>
+                        <h3 class="card-title">24/7 Technical Support</h3>
+                        <p class="card-text">Expert support team available round the clock</p>
+                    </div>
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="card-title">99.9% Uptime Guarantee</h3>
+                        <p class="card-text">Reliable hosting infrastructure you can count on</p>
+                    </div>
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="card-title">cPanel Control Panel</h3>
+                        <p class="card-text">User-friendly interface for easy website management</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2 class="heading-2 text-center mb-12">What's Included in our Hosting Packages</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3 class="card-title">Free Domain Registration</h3>
+                        <p class="card-text">Free domain included – choose from .co.za, .site, .online & more with any hosting plan.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3 class="card-title">cPanel Control Panel</h3>
+                        <p class="card-text">South Africa's best web hosting includes award-winning cPanel for full, easy website management.</p>
+                    </div>
+
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="card-title">Smart Malware Protection</h3>
+                        <p class="card-text">Our plans includes multi-layered security with Imunify360, CSF, and Monarx to protect against malware, viruses, and bot attacks.</p>
+                    </div>
+
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="card-title">Hosted in Joburg</h3>
+                        <p class="card-text">Africa's fastest hosting—powered by local infrastructure & multi-network redundancy!</p>
+                    </div>
+
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h3 class="card-title">Free SSL Certificates</h3>
+                        <p class="card-text">Boost customer trust with free Let's Encrypt SSL certificates on all hosted websites.</p>
+                    </div>
+
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="card-title">LiteSpeed Web Server</h3>
+                        <p class="card-text">Our web hosting uses LiteSpeed – the world's fastest web server – for lightning-fast website loading.</p>
+                    </div>
+
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="card-title">Premium Support</h3>
+                        <p class="card-text">The best web hosting in South Africa includes expert, friendly support ready to assist you 24/7.</p>
+                    </div>
+
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-download"></i>
                         </div>
-                        <h3>Softaculous Installs</h3>
-                        <p>A 1-click easy installer for more than 380+ web applications like WordPress and Joomla, Drupal.</p>
+                        <h3 class="card-title">Softaculous Installs</h3>
+                        <p class="card-text">A 1-click easy installer for more than 380+ web applications like WordPress and Joomla, Drupal.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-exchange-alt"></i>
                         </div>
-                        <h3>Free Website Migration</h3>
-                        <p>Relax – our experts will migrate your main website for free!</p>
+                        <h3 class="card-title">Free Website Migration</h3>
+                        <p class="card-text">Relax – our experts will migrate your main website for free!</p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-envelope-shield"></i>
                         </div>
-                        <h3>SpamExperts Protection</h3>
-                        <p>Your emails are protected by SpamExperts, blocking 99.9% of spam, malware, and viruses before they reach you.</p>
+                        <h3 class="card-title">SpamExperts Protection</h3>
+                        <p class="card-text">Your emails are protected by SpamExperts, blocking 99.9% of spam, malware, and viruses before they reach you.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-backup"></i>
                         </div>
-                        <h3>Daily Acronis Backups</h3>
-                        <p>All Web Hosting plans include daily offsite Acronis backups for instant data restoration and peace of mind.</p>
+                        <h3 class="card-title">Daily Acronis Backups</h3>
+                        <p class="card-text">All Web Hosting plans include daily offsite Acronis backups for instant data restoration and peace of mind.</p>
                     </div>
 
-                    <div class="feature-card">
-                        <div class="feature-icon">
+                    <div class="card card-feature hover-lift">
+                        <div class="card-feature-icon">
                             <i class="fas fa-code"></i>
                         </div>
-                        <h3>Developer-Friendly</h3>
-                        <p>All our web hosting plans support developer tools like SSH, WP-CLI, SFTP, and Git for easy maintenance and version control.</p>
+                        <h3 class="card-title">Developer-Friendly</h3>
+                        <p class="card-text">All our web hosting plans support developer tools like SSH, WP-CLI, SFTP, and Git for easy maintenance and version control.</p>
                     </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <section id="contact" class="contact">
-        <div class="contact-content">
-            <h2>Contact Us</h2>
-            <div class="contact-grid">
+    <section id="contact" class="section bg-gray-50">
+        <div class="container">
+            <h2 class="heading-2 text-center mb-12">Contact Us</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 <div class="contact-info">
-                    <h3>Get in Touch</h3>
-                    <p>Ready to get started with your hosting solution? Our team is here to help you every step of the way.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
+                    <h3 class="heading-3 mb-4">Get in Touch</h3>
+                    <p class="text-large mb-8">Ready to get started with your hosting solution? Our team is here to help you every step of the way.</p>
+                    <div class="space-y-6">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-primary-600"></i>
+                            </div>
                             <div>
-                                <h4>Address</h4>
-                                <p>Randburg, Johannesburg<br>South Africa</p>
+                                <h4 class="heading-5 mb-2">Address</h4>
+                                <p class="text-base text-secondary">Randburg, Johannesburg<br>South Africa</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-primary-600"></i>
+                            </div>
                             <div>
-                                <h4>Email</h4>
-                                <p>support@afrilink.co.za</p>
+                                <h4 class="heading-5 mb-2">Email</h4>
+                                <p class="text-base text-secondary">support@afrilink.co.za</p>
                             </div>
                         </div>
-                        <div class="contact-item">
-                            <i class="fas fa-clock"></i>
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-primary-600"></i>
+                            </div>
                             <div>
-                                <h4>Support Hours</h4>
-                                <p>24/7 Technical Support</p>
+                                <h4 class="heading-5 mb-2">Support Hours</h4>
+                                <p class="text-base text-secondary">24/7 Technical Support</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <h3>Send us a Message</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required data-validate="required">
+                <div class="card p-8">
+                    <h3 class="heading-3 mb-6">Send us a Message</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required">
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required data-validate="required|email">
+                        <div>
+                            <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required|email">
                         </div>
-                        <div class="form-group">
-                            <select required data-validate="required">
+                        <div>
+                            <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required">
                                 <option value="">Select Service</option>
                                 <option value="hosting">Web Hosting</option>
                                 <option value="domains">Domain Registration</option>
@@ -453,10 +539,10 @@
                                 <option value="other">Other</option>
                             </select>
                         </div>
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="5" required data-validate="required"></textarea>
+                        <div>
+                            <textarea placeholder="Your Message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required"></textarea>
                         </div>
-                        <button type="submit" class="contact-btn">
+                        <button type="submit" class="btn btn-lg btn-primary hover-lift w-full">
                             <i class="fas fa-paper-plane"></i> Send Message
                         </button>
                     </form>
@@ -465,23 +551,31 @@
         </div>
     </section>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Randburg, Johannesburg</p>
-                <p>South Africa</p>
-                <p>Email: support@afrilink.co.za</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <a href="#hosting">Hosting Plans</a>
-                <a href="#features">About Us</a>
-                <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea">Client Area</a>
+    <footer class="bg-primary-800 text-white">
+        <div class="container py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="heading-4 text-white mb-4">Contact Us</h3>
+                    <div class="space-y-2">
+                        <p class="text-base text-white opacity-80">Randburg, Johannesburg</p>
+                        <p class="text-base text-white opacity-80">South Africa</p>
+                        <p class="text-base text-white opacity-80">Email: support@afrilink.co.za</p>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="heading-4 text-white mb-4">Quick Links</h3>
+                    <div class="flex flex-col gap-2">
+                        <a href="#hosting" class="text-white opacity-80 hover:opacity-100 hover:text-secondary-400 transition-colors">Hosting Plans</a>
+                        <a href="#features" class="text-white opacity-80 hover:opacity-100 hover:text-secondary-400 transition-colors">About Us</a>
+                        <a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea" class="text-white opacity-80 hover:opacity-100 hover:text-secondary-400 transition-colors">Client Area</a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Afrilink Telecoms (Pty) Ltd. All rights reserved.</p>
+        <div class="border-t border-white border-opacity-20">
+            <div class="container py-6">
+                <p class="text-center text-white opacity-80">&copy; 2024 Afrilink Telecoms (Pty) Ltd. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 </body>

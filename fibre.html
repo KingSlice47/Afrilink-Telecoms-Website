@@ -9,6 +9,7 @@
     <link rel="apple-touch-icon" href="images/Afrlink Telecoms suggested logo 512.png">
     <meta name="theme-color" content="#0B1426">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/fibre.css">
     <script src="js/main.js" defer></script>
@@ -36,8 +37,9 @@
     </header>
 
     <main>
-        <section class="fibre-hero">
-            <div class="fibre-hero-content">
+        <section class="section-lg bg-primary-800">
+            <div class="container">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div class="fibre-illustration">
                     <svg viewBox="0 0 400 300" class="animated-fibre">
                         <defs>
@@ -97,71 +99,100 @@
                             </circle>
                         </g>
                     </svg>
-                </div>
-                <h1>Fibre Installations & Network Solutions</h1>
-                <p>Ultra-fast, reliable fibre internet and comprehensive network infrastructure solutions for homes and businesses across South Africa.</p>
-                
-                <div class="fibre-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">1Gbps</div>
-                        <div class="stat-label">Max Speed</div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">Uptime</div>
+                    <div class="hero-content animate-slideInRight">
+                        <h1 class="heading-display text-white mb-4">Fibre Installations & Network Solutions</h1>
+                        <p class="text-lead text-white mb-8">Ultra-fast, reliable fibre internet and comprehensive network infrastructure solutions for homes and businesses across South Africa.</p>
+                        
+                        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-secondary-500">1Gbps</div>
+                                <div class="text-sm text-white opacity-80">Max Speed</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-secondary-500">99.9%</div>
+                                <div class="text-sm text-white opacity-80">Uptime</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-secondary-500">24/7</div>
+                                <div class="text-sm text-white opacity-80">Support</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-3xl font-bold text-secondary-500">1000+</div>
+                                <div class="text-sm text-white opacity-80">Installations</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="#quote" class="btn btn-lg btn-secondary hover-lift">Get Free Quote</a>
+                            <a href="#services" class="btn btn-lg btn-outline-secondary hover-lift">View Services</a>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">1000+</div>
-                        <div class="stat-label">Installations</div>
-                    </div>
-                </div>
-                
-                <div class="cta-buttons">
-                    <a href="#quote" class="btn-primary">Get Free Quote</a>
-                    <a href="#services" class="btn-secondary">View Services</a>
                 </div>
             </div>
         </section>
 
-        <section id="services" class="fibre-services">
+        <section id="services" class="section">
             <div class="container">
-                <h2>Our Fibre & Network Services</h2>
-                <p class="section-intro">From residential fibre installations to enterprise network solutions, we provide end-to-end connectivity services.</p>
+                <h2 class="heading-2 text-center mb-4">Our Fibre & Network Services</h2>
+                <p class="text-lead text-center mb-12">From residential fibre installations to enterprise network solutions, we provide end-to-end connectivity services.</p>
                 
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="card card-hover p-6">
+                        <div class="card-feature-icon mb-4">
                             <i class="fas fa-home"></i>
                         </div>
-                        <h3>Residential Fibre</h3>
-                        <p>High-speed fibre internet for homes with speeds up to 1Gbps. Perfect for streaming, gaming, and remote work.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Speeds from 10Mbps to 1Gbps</li>
-                            <li><i class="fas fa-check"></i> Unlimited data options</li>
-                            <li><i class="fas fa-check"></i> Professional installation</li>
-                            <li><i class="fas fa-check"></i> 24/7 technical support</li>
+                        <h3 class="card-title mb-4">Residential Fibre</h3>
+                        <p class="card-text mb-6">High-speed fibre internet for homes with speeds up to 1Gbps. Perfect for streaming, gaming, and remote work.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>Speeds from 10Mbps to 1Gbps</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>Unlimited data options</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>Professional installation</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>24/7 technical support</span>
+                            </li>
                         </ul>
-                        <div class="service-price">From R299/month</div>
+                        <div class="text-2xl font-bold text-primary-600">From R299/month</div>
                     </div>
 
-                    <div class="service-card featured">
-                        <div class="featured-badge">Most Popular</div>
-                        <div class="service-icon">
+                    <div class="card card-hover p-6 border-2 border-secondary-500 relative">
+                        <div class="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                            <span class="bg-secondary-500 text-white px-4 py-1 rounded-full text-sm font-semibold">Most Popular</span>
+                        </div>
+                        <div class="card-feature-icon mb-4">
                             <i class="fas fa-building"></i>
                         </div>
-                        <h3>Business Fibre</h3>
-                        <p>Enterprise-grade fibre connectivity with guaranteed speeds, SLAs, and dedicated support for businesses.</p>
-                        <ul class="service-features">
-                            <li><i class="fas fa-check"></i> Dedicated fibre lines</li>
-                            <li><i class="fas fa-check"></i> Guaranteed bandwidth</li>
-                            <li><i class="fas fa-check"></i> 99.9% uptime SLA</li>
-                            <li><i class="fas fa-check"></i> Redundant connections</li>
+                        <h3 class="card-title mb-4 text-secondary-600">Business Fibre</h3>
+                        <p class="card-text mb-6">Enterprise-grade fibre connectivity with guaranteed speeds, SLAs, and dedicated support for businesses.</p>
+                        <ul class="space-y-2 mb-6">
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>Dedicated fibre lines</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>Guaranteed bandwidth</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>99.9% uptime SLA</span>
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <i class="fas fa-check text-success-500"></i>
+                                <span>Redundant connections</span>
+                            </li>
                         </ul>
-                        <div class="service-price">From R899/month</div>
+                        <div class="text-2xl font-bold text-secondary-600">From R899/month</div>
                     </div>
 
                     <div class="service-card">
