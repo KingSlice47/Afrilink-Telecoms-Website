@@ -1,0 +1,115 @@
+{
+  "structureMatches": {
+    "header": {
+      "height": 86,
+      "position": "fixed",
+      "background": "rgb(255, 255, 255)",
+      "hasLogo": true,
+      "isFixed": true
+    },
+    "hero": {
+      "background": "rgb(4, 103, 181)",
+      "height": 750,
+      "hasBlueBackground": true,
+      "hasTitle": true,
+      "hasButtons": 2
+    },
+    "hosting": {
+      "background": "rgb(255, 255, 255)",
+      "cards": 4,
+      "hasGridLayout": true,
+      "hasFeaturedCard": true
+    },
+    "builder": {
+      "background": "rgb(238, 247, 255)",
+      "hasLightBackground": true,
+      "features": 4
+    },
+    "features": {
+      "background": "rgb(255, 255, 255)",
+      "featureCards": 8,
+      "hasWhiteBackground": true
+    },
+    "whyChoose": {
+      "background": "rgb(9, 106, 191)",
+      "hasBlueBackground": true,
+      "reasons": 5,
+      "hasWhiteText": true
+    }
+  },
+  "improvements": {},
+  "designSystem": {
+    "hasDesignSystemVars": {
+      "primary": true,
+      "secondary": true,
+      "spacing": true,
+      "typography": true
+    },
+    "components": {
+      "buttons": 9,
+      "cards": 17,
+      "headings": 18,
+      "grids": 8,
+      "containers": 8
+    },
+    "typography": {
+      "displayHeading": true,
+      "properFontSizes": false,
+      "h2FontSize": true
+    }
+  },
+  "responsiveness": {
+    "Mobile": {
+      "headerVisible": true,
+      "gridAdapts": "343px",
+      "mobileMenuVisible": true,
+      "heroStacks": true
+    },
+    "Tablet": {
+      "headerVisible": true,
+      "gridAdapts": "721px",
+      "mobileMenuVisible": true,
+      "heroStacks": true
+    },
+    "Desktop": {
+      "headerVisible": true,
+      "gridAdapts": "1168px",
+      "mobileMenuVisible": true,
+      "heroStacks": true
+    }
+  },
+  "performance": {
+    "domContentLoaded": 2175,
+    "imagesCount": 1,
+    "cssFiles": 3,
+    "jsFiles": 1,
+    "inlineStyles": 18
+  },
+  "comparison": {
+    "original": {
+      "sections": 6,
+      "cards": 26,
+      "buttons": 7,
+      "hasDesignSystem": true
+    },
+    "improved": {
+      "sections": 6,
+      "cards": 17,
+      "buttons": 9,
+      "hasDesignSystem": true,
+      "followsDomainsStructure": "ref: <Node>"
+    },
+    "improvements": {
+      "followsDomainsStructure": "ref: <Node>",
+      "moreStructured": true,
+      "betterComponentUsage": false
+    }
+  },
+  "accessibility": {
+    "hasHeadingHierarchy": "ref: <Node>",
+    "hasAltTags": true,
+    "hasAriaLabels": true,
+    "hasFocusStates": true,
+    "properColorContrast": true
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "filesExist": {
+    "css/design-system.css": true,
+    "design-system-guide.md": true,
+    "DESIGN_SYSTEM_IMPLEMENTATION_SUMMARY.md": true
+  },
+  "designSystemLoaded": true,
+  "componentsPresent": {
+    "--color-primary-600": true,
+    "--color-secondary-500": true,
+    "--text-lg": true,
+    "--space-4": true,
+    "--radius-lg": true,
+    "Button Components": true,
+    "Card Components": true,
+    "Typography Classes": true,
+    "Grid System": true,
+    "Container Classes": true,
+    "Pricing Cards": true,
+    ".btn-primary": true,
+    ".btn-secondary": true,
+    ".btn-outline-primary": true,
+    ".btn-lg": true,
+    ".btn-md": false,
+    "Domains: Feature Cards": true,
+    "Domains: Testimonial Cards": true,
+    "Domains: Button Groups": true,
+    "Fibre: Background Colors": true,
+    "Fibre: Hover Cards": true,
+    "Fibre: Grid Layout": true
+  },
+  "responsiveTests": {
+    "Mobile Menu Toggle": true
+  },
+  "accessibility": {
+    "Focus States": true,
+    "Heading Classes": true
+  },
+  "errors": []
+}
