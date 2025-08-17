@@ -12,7 +12,8 @@
       "WebFetch(domain:www.bluehost.com)",
       "Bash(gh search repos:*)",
       "Bash(gh search code:*)",
-      "Bash(cp:*)"
+      "Bash(cp:*)",
+      "Bash(rm:*)"
     ],
     "deny": [],
     "ask": []
