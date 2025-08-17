@@ -18,6 +18,7 @@
   "homepage": "https://github.com/KingSlice47/Afrilink-Telecoms-Website#readme",
   "description": "",
   "dependencies": {
+    "@playwright/test": "^1.54.2",
     "playwright": "^1.54.2"
   }
 }
