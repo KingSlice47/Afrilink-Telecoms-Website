@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/design-system.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/enhanced-containers.css">
+    <link rel="stylesheet" href="css/modern-contact-form.css">
     <link rel="stylesheet" href="improvements/enhanced-styles.css">
     <script src="js/main.js" defer></script>
+    <script src="js/modern-contact-form.js" defer></script>
+    <script src="js/image-enhancement.js" defer></script>
     <script src="improvements/enhanced-javascript.js" defer></script>
 </head>
 <body>
@@ -93,14 +97,6 @@
             </div>
         </nav>
         
-        <!-- Breadcrumb Navigation -->
-        <div class="breadcrumb-container">
-            <nav class="breadcrumb">
-                <a href="#"><i class="fas fa-home"></i> Home</a>
-                <span class="breadcrumb-separator">></span>
-                <span class="breadcrumb-current">Web Hosting</span>
-            </nav>
-        </div>
     </header>
 
     <!-- Trust Banner -->
@@ -129,10 +125,13 @@
 
     <main>
         <!-- HERO SECTION -->
-        <section class="hero section bg-primary-800">
+        <section class="hero section bg-primary-800 hero-container-enhanced">
+            <div class="hero-background">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1600&auto=format&fit=crop" alt="Data center background" loading="eager">
+            </div>
             <div class="hero-overlay"></div>
             <div class="container">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div class="split-container">
                     <!-- SIMPLE HERO ILLUSTRATION -->
                     <div class="hero-illustration">
                         <div class="hosting-visual bg-white bg-opacity-10 rounded-2xl p-8">
@@ -164,7 +163,7 @@
                     </div>
                     
                     <!-- HERO CONTENT -->
-                    <div class="hero-content">
+                    <div class="hero-content hero-content-enhanced">
                         <div class="hero-text">
                             <h1 class="text-4xl lg:text-5xl font-bold text-white mb-4">The Best Web Hosting in South Africa</h1>
                             <p class="text-lg text-white mb-3">Get a powerful Web Hosting platform for your website at affordable prices.</p>
@@ -213,8 +212,8 @@
         </section>
 
         <!-- ENHANCED PRICING SECTION WITH ALL ANIMATIONS -->
-        <section id="hosting" class="section bg-gray-50">
-            <div class="container">
+        <section id="hosting" class="section bg-gray-50 section-container">
+            <div class="container-wide">
                 <!-- Pricing Header with Billing Toggle -->
                 <div class="pricing-header text-center mb-12">
                     <h2 class="heading-2 mb-4">Choose Your Perfect Hosting Plan</h2>
@@ -247,7 +246,7 @@
                 </div>
 
                 <!-- ENHANCED PRICING CARDS WITH ANIMATIONS -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="card-grid-container card-grid-4">
                     <!-- Entry Hosting -->
                     <div class="card card-pricing card-hover animate-slideInUp" data-plan="entry" style="animation-delay: 0.1s;">
                         <div class="plan-header">
@@ -664,6 +663,29 @@
                 </div>
             </div>
         </section>
+
+        <!-- CTA SECTION WITH BACKGROUND -->
+        <section class="section section-container">
+            <div class="container">
+                <div class="cta-container">
+                    <div class="cta-background">
+                        <img src="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=1600&auto=format&fit=crop" alt="Technology background" loading="lazy">
+                    </div>
+                    <div class="cta-content">
+                        <h2 class="heading-2 text-white mb-4">Ready to Get Started?</h2>
+                        <p class="text-large text-white opacity-90 mb-8">Join thousands of satisfied customers who trust Afrilink Telecoms for their hosting needs.</p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="#hosting" class="btn btn-lg btn-secondary hover-lift">
+                                <i class="fas fa-rocket"></i> Start Your Website Today
+                            </a>
+                            <a href="#contact" class="btn btn-lg btn-outline-white hover-lift">
+                                <i class="fas fa-phone"></i> Talk to an Expert
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ORIGINAL CONTACT SECTION -->
@@ -704,31 +726,87 @@
                         </div>
                     </div>
                 </div>
-                <div class="card p-8">
-                    <h3 class="heading-3 mb-6">Send us a Message</h3>
-                    <form class="space-y-4">
-                        <div>
-                            <input type="text" placeholder="Your Name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required">
+                <div class="modern-contact-form">
+                    <div class="form-header">
+                        <h3 class="form-title">Get in Touch</h3>
+                        <p class="form-subtitle">We'd love to hear from you. Send us a message and we'll respond as soon as possible.</p>
+                    </div>
+                    
+                    <form class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="name" class="form-label">
+                                    <i class="fas fa-user"></i>
+                                    Full Name
+                                </label>
+                                <input type="text" id="name" name="name" required class="form-input" placeholder="Enter your full name">
+                                <div class="form-focus-line"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <i class="fas fa-envelope"></i>
+                                    Email Address
+                                </label>
+                                <input type="email" id="email" name="email" required class="form-input" placeholder="Enter your email address">
+                                <div class="form-focus-line"></div>
+                            </div>
                         </div>
-                        <div>
-                            <input type="email" placeholder="Your Email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required|email">
+                        
+                        <div class="form-group">
+                            <label for="phone" class="form-label">
+                                <i class="fas fa-phone"></i>
+                                Phone Number (Optional)
+                            </label>
+                            <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number">
+                            <div class="form-focus-line"></div>
                         </div>
-                        <div>
-                            <select required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required">
-                                <option value="">Select Service</option>
-                                <option value="hosting">Web Hosting</option>
-                                <option value="domains">Domain Registration</option>
-                                <option value="support">Technical Support</option>
-                                <option value="billing">Billing Inquiry</option>
-                                <option value="other">Other</option>
-                            </select>
+                        
+                        <div class="form-group">
+                            <label for="service" class="form-label">
+                                <i class="fas fa-cog"></i>
+                                Service Interest
+                            </label>
+                            <div class="custom-select">
+                                <select id="service" name="service" required class="form-select">
+                                    <option value="">Select a service</option>
+                                    <option value="web-hosting">Web Hosting</option>
+                                    <option value="domain-registration">Domain Registration</option>
+                                    <option value="technical-support">Technical Support</option>
+                                    <option value="billing-inquiry">Billing Inquiry</option>
+                                    <option value="general-inquiry">General Inquiry</option>
+                                </select>
+                                <div class="select-arrow">
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <textarea placeholder="Your Message" rows="5" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors" data-validate="required"></textarea>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">
+                                <i class="fas fa-comment"></i>
+                                Your Message
+                            </label>
+                            <textarea id="message" name="message" required class="form-textarea" rows="5" placeholder="Tell us how we can help you..."></textarea>
+                            <div class="form-focus-line"></div>
                         </div>
-                        <button type="submit" class="btn btn-lg btn-primary hover-lift w-full">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn-modern btn-primary">
+                                <span class="btn-text">Send Message</span>
+                                <div class="btn-icon">
+                                    <i class="fas fa-paper-plane"></i>
+                                </div>
+                                <div class="btn-loading">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </div>
+                            </button>
+                            
+                            <div class="form-privacy">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Your information is secure and will not be shared with third parties.</span>
+                            </div>
+                        </div>
                     </form>
                 </div>
             </div>
