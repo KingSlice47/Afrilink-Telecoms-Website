@@ -72,5 +72,6 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  // Tailwind v4: register plugins via CSS using the `@plugin` directive in your CSS entry file.
+  plugins: [],
 }

@@ -17,7 +17,7 @@ const WhyAfrilinkPage = () => {
                 <section className="bg-gray-50 py-20">
                     <div className="container mx-auto px-6 text-center">
                         <h1 className="text-4xl md:text-5xl font-bold mb-4">The Afrilink Advantage</h1>
-                        <p className="text-lg md:text-xl text-gray-600">We're more than just a hosting provider. We're your partner in success.</p>
+                        <p className="text-lg md:text-xl text-gray-600">We&apos;re more than just a hosting provider. We&apos;re your partner in success.</p>
                     </div>
                 </section>
 

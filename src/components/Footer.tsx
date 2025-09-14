@@ -15,8 +15,8 @@ const Footer = () => {
           <div className="w-full md:w-1/3 mb-6 md:mb-0">
             <h3 className="text-lg font-bold mb-4">Quick Links</h3>
             <ul>
-              <li><Link href="/#hosting"><a className="hover:text-gray-300">Hosting Plans</a></Link></li>
-              <li><Link href="/#features"><a className="hover:text-gray-300">About Us</a></Link></li>
+              <li><Link href="/#hosting" className="hover:text-gray-300">Hosting Plans</Link></li>
+              <li><Link href="/#features" className="hover:text-gray-300">About Us</Link></li>
               <li><a href="https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea" className="hover:text-gray-300" target="_blank" rel="noopener noreferrer">Client Area</a></li>
             </ul>
           </div>

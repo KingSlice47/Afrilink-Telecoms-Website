@@ -15,7 +15,7 @@ const HomePage = () => {
           <div className="absolute inset-0 bg-black opacity-60"></div>
           <div className="container mx-auto px-6 relative z-10 text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-4 leading-tight">Effortless, Blazing-Fast Web Hosting for Your South African Business.</h1>
-            <p className="text-lg md:text-xl mb-8">Focus on your business, we'll handle the rest.</p>
+            <p className="text-lg md:text-xl mb-8">Focus on your business, we&apos;ll handle the rest.</p>
             <Link href="/hosting">
               <Button size="lg">View Hosting Plans</Button>
             </Link>
