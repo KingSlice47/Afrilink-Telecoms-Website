@@ -1,7 +1,7 @@
 {
   "name": "afrilink-telecoms-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "Afrilink Telecoms website - hosting, domains, and fibre internet services",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
@@ -13,8 +13,14 @@
     "type": "git",
     "url": "git+https://github.com/KingSlice47/Afrilink-Telecoms-Website.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "hosting",
+    "domains",
+    "fibre",
+    "south-africa",
+    "website"
+  ],
+  "author": "Afrilink Telecoms",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -37,7 +43,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.1",
     "@tailwindcss/postcss": "^4.1.13",
-    "@types/node": "^24.3.3",
+    "@types/node": "^24.4.0",
     "@types/react": "^19.1.13",
     "autoprefixer": "^10.4.21",
     "eslint": "^9.35.0",

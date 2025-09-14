@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mv:*)",
+      "Bash(node:*)",
+      "Bash(npm install:*)",
+      "WebFetch(domain:www.hetzner.com)",
+      "WebFetch(domain:www.axxess.co.za)",
+      "WebFetch(domain:www.webafrica.co.za)",
+      "WebFetch(domain:www.hostinger.com)",
+      "WebFetch(domain:www.siteground.com)",
+      "WebFetch(domain:www.bluehost.com)",
+      "Bash(gh search repos:*)",
+      "Bash(gh search code:*)",
+      "Bash(cp:*)",
+      "Bash(rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
