@@ -1,7 +1,7 @@
 import Header from '@/components/header';
 import Footer from '@/components/Footer';
 import { Metadata } from 'next';
-import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/Card';
 import { Check } from 'lucide-react';
 
 export const metadata: Metadata = {

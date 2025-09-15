@@ -1,4 +1,4 @@
-/** PostCSS config updated for Tailwind CSS v4 (plugins as an object) */
+/** @type {import('postcss-load-config').Config} */
 module.exports = {
   plugins: {
     '@tailwindcss/postcss': {},

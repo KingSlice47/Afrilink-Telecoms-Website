@@ -1,6 +1,6 @@
 import Header from '@/components/header';
 import Footer from '@/components/Footer';
-import { Button } from '@/components/ui/button';
+import { Button } from '@/components/ui/Button';
 import { Check, X } from 'lucide-react';
 import { Metadata } from 'next';
 

@@ -1,0 +1,158 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Afrilink" [ref=e5]:
+          - /url: /
+          - generic [ref=e6] [cursor=pointer]: Afrilink
+        - link "Client Login" [ref=e8]:
+          - /url: https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea
+          - button "Client Login" [ref=e9]
+    - main [ref=e10]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - heading "Professional Web Hosting Solutions" [level=1] [ref=e15]
+          - paragraph [ref=e16]: South Africa's Leading Web Hosting Provider
+        - generic [ref=e19]:
+          - generic [ref=e20]: Most Popular
+          - heading "Super Hosting" [level=2] [ref=e21]
+          - generic [ref=e22]:
+            - generic [ref=e23]: R289
+            - generic [ref=e24]: .99/month
+          - list [ref=e25]:
+            - listitem [ref=e26]:
+              - img
+              - text: 100 GB NVMe Storage
+            - listitem [ref=e28]:
+              - img
+              - text: 100 Email Accounts
+            - listitem [ref=e30]:
+              - img
+              - text: 30 MySQL Databases
+            - listitem [ref=e32]:
+              - img
+              - text: Free SSL Certificates
+            - listitem [ref=e34]:
+              - img
+              - text: 99.9% Uptime Guarantee
+          - button "Get Started Now" [ref=e36]
+      - generic [ref=e38]:
+        - heading "Powered by Cutting-Edge Infrastructure" [level=2] [ref=e39]
+        - img [ref=e41]:
+          - generic [ref=e56]:
+            - generic [ref=e59]: ⚡
+            - generic [ref=e62]: 🔒
+            - generic [ref=e65]: ☁
+      - generic [ref=e67]:
+        - heading "Our Hosting Plans" [level=2] [ref=e68]
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - heading "Entry Hosting" [level=3] [ref=e71]
+            - generic [ref=e72]:
+              - generic [ref=e73]: R119
+              - generic [ref=e74]: .99/mo
+            - list [ref=e75]:
+              - listitem [ref=e76]:
+                - img [ref=e77]
+                - text: 25 GB NVMe Storage
+              - listitem [ref=e79]:
+                - img [ref=e80]
+                - text: 25 Email Accounts
+              - listitem [ref=e82]:
+                - img [ref=e83]
+                - text: 10 MySQL Databases
+              - listitem [ref=e85]:
+                - img [ref=e86]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e88]
+          - generic [ref=e89]:
+            - heading "Basic Hosting" [level=3] [ref=e90]
+            - generic [ref=e91]:
+              - generic [ref=e92]: R179
+              - generic [ref=e93]: .99/mo
+            - list [ref=e94]:
+              - listitem [ref=e95]:
+                - img [ref=e96]
+                - text: 50 GB NVMe Storage
+              - listitem [ref=e98]:
+                - img [ref=e99]
+                - text: 50 Email Accounts
+              - listitem [ref=e101]:
+                - img [ref=e102]
+                - text: 20 MySQL Databases
+              - listitem [ref=e104]:
+                - img [ref=e105]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e107]
+          - generic [ref=e108]:
+            - generic [ref=e109]: Popular
+            - heading "Super Hosting" [level=3] [ref=e110]
+            - generic [ref=e111]:
+              - generic [ref=e112]: R289
+              - generic [ref=e113]: .99/mo
+            - list [ref=e114]:
+              - listitem [ref=e115]:
+                - img [ref=e116]
+                - text: 100 GB NVMe Storage
+              - listitem [ref=e118]:
+                - img [ref=e119]
+                - text: 100 Email Accounts
+              - listitem [ref=e121]:
+                - img [ref=e122]
+                - text: 30 MySQL Databases
+              - listitem [ref=e124]:
+                - img [ref=e125]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e127]
+          - generic [ref=e128]:
+            - heading "Ultimate Hosting" [level=3] [ref=e129]
+            - generic [ref=e130]:
+              - generic [ref=e131]: R349
+              - generic [ref=e132]: .99/mo
+            - list [ref=e133]:
+              - listitem [ref=e134]:
+                - img [ref=e135]
+                - text: 200 GB NVMe Storage
+              - listitem [ref=e137]:
+                - img [ref=e138]
+                - text: 200 Email Accounts
+              - listitem [ref=e140]:
+                - img [ref=e141]
+                - text: 40 MySQL Databases
+              - listitem [ref=e143]:
+                - img [ref=e144]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e146]
+      - generic [ref=e148]:
+        - heading "More Features Coming Soon" [level=2] [ref=e149]
+        - paragraph [ref=e150]: Website Builder, Why Choose Us, and Contact sections will be implemented here.
+    - contentinfo [ref=e151]:
+      - generic [ref=e153]:
+        - generic [ref=e154]:
+          - heading "Contact Us" [level=3] [ref=e155]
+          - paragraph [ref=e156]: Randburg, Johannesburg
+          - paragraph [ref=e157]: South Africa
+          - paragraph [ref=e158]: "Email: support@afrilink.co.za"
+        - generic [ref=e159]:
+          - heading "Quick Links" [level=3] [ref=e160]
+          - list [ref=e161]:
+            - listitem [ref=e162]:
+              - link "Hosting Plans" [ref=e163]:
+                - /url: /#hosting
+            - listitem [ref=e164]:
+              - link "About Us" [ref=e165]:
+                - /url: /#features
+            - listitem [ref=e166]:
+              - link "Client Area" [ref=e167]:
+                - /url: https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea
+      - paragraph [ref=e170]: © 2025 Afrilink Telecoms (Pty) Ltd. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e176] [cursor=pointer]:
+    - img [ref=e177] [cursor=pointer]
+  - alert [ref=e182]
+  - generic [ref=e183]: Entry Plan
+  - generic [ref=e184]: Popular Badge
+  - generic [ref=e185]: Feature List
+```

@@ -1,0 +1,165 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - navigation [ref=e4]:
+        - link "Afrilink" [ref=e5] [cursor=pointer]:
+          - /url: /
+          - generic [ref=e6] [cursor=pointer]: Afrilink
+        - generic [ref=e7]:
+          - link "Hosting Plans" [ref=e8] [cursor=pointer]:
+            - /url: /Hosting
+            - generic [ref=e9] [cursor=pointer]: Hosting Plans
+          - link "Why Afrilink" [ref=e10] [cursor=pointer]:
+            - /url: /why-afrilink
+            - generic [ref=e11] [cursor=pointer]: Why Afrilink
+          - link "Support" [ref=e12] [cursor=pointer]:
+            - /url: /support
+            - generic [ref=e13] [cursor=pointer]: Support
+        - link "Client Login" [ref=e15] [cursor=pointer]:
+          - /url: https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea
+          - button "Client Login" [active] [ref=e16]
+    - main [ref=e17]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - heading "Professional Web Hosting Solutions" [level=1] [ref=e22]
+          - paragraph [ref=e23]: South Africa's Leading Web Hosting Provider
+        - generic [ref=e26]:
+          - generic [ref=e27]: Most Popular
+          - heading "Super Hosting" [level=2] [ref=e28]
+          - generic [ref=e29]:
+            - generic [ref=e30]: R289
+            - generic [ref=e31]: .99/month
+          - list [ref=e32]:
+            - listitem [ref=e33]:
+              - img [ref=e34]
+              - text: 100 GB NVMe Storage
+            - listitem [ref=e36]:
+              - img [ref=e37]
+              - text: 100 Email Accounts
+            - listitem [ref=e39]:
+              - img [ref=e40]
+              - text: 30 MySQL Databases
+            - listitem [ref=e42]:
+              - img [ref=e43]
+              - text: Free SSL Certificates
+            - listitem [ref=e45]:
+              - img [ref=e46]
+              - text: 99.9% Uptime Guarantee
+          - button "Get Started Now" [ref=e48]
+      - generic [ref=e50]:
+        - heading "Powered by Cutting-Edge Infrastructure" [level=2] [ref=e51]
+        - img [ref=e53]:
+          - generic [ref=e68]:
+            - generic [ref=e71]: ⚡
+            - generic [ref=e74]: 🔒
+            - generic [ref=e77]: ☁
+      - generic [ref=e79]:
+        - heading "Our Hosting Plans" [level=2] [ref=e80]
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - heading "Entry Hosting" [level=3] [ref=e83]
+            - generic [ref=e84]:
+              - generic [ref=e85]: R119
+              - generic [ref=e86]: .99/mo
+            - list [ref=e87]:
+              - listitem [ref=e88]:
+                - img [ref=e89]
+                - text: 25 GB NVMe Storage
+              - listitem [ref=e91]:
+                - img [ref=e92]
+                - text: 25 Email Accounts
+              - listitem [ref=e94]:
+                - img [ref=e95]
+                - text: 10 MySQL Databases
+              - listitem [ref=e97]:
+                - img [ref=e98]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e100]
+          - generic [ref=e101]:
+            - heading "Basic Hosting" [level=3] [ref=e102]
+            - generic [ref=e103]:
+              - generic [ref=e104]: R179
+              - generic [ref=e105]: .99/mo
+            - list [ref=e106]:
+              - listitem [ref=e107]:
+                - img [ref=e108]
+                - text: 50 GB NVMe Storage
+              - listitem [ref=e110]:
+                - img [ref=e111]
+                - text: 50 Email Accounts
+              - listitem [ref=e113]:
+                - img [ref=e114]
+                - text: 20 MySQL Databases
+              - listitem [ref=e116]:
+                - img [ref=e117]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e119]
+          - generic [ref=e120]:
+            - generic [ref=e121]: Popular
+            - heading "Super Hosting" [level=3] [ref=e122]
+            - generic [ref=e123]:
+              - generic [ref=e124]: R289
+              - generic [ref=e125]: .99/mo
+            - list [ref=e126]:
+              - listitem [ref=e127]:
+                - img [ref=e128]
+                - text: 100 GB NVMe Storage
+              - listitem [ref=e130]:
+                - img [ref=e131]
+                - text: 100 Email Accounts
+              - listitem [ref=e133]:
+                - img [ref=e134]
+                - text: 30 MySQL Databases
+              - listitem [ref=e136]:
+                - img [ref=e137]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e139]
+          - generic [ref=e140]:
+            - heading "Ultimate Hosting" [level=3] [ref=e141]
+            - generic [ref=e142]:
+              - generic [ref=e143]: R349
+              - generic [ref=e144]: .99/mo
+            - list [ref=e145]:
+              - listitem [ref=e146]:
+                - img [ref=e147]
+                - text: 200 GB NVMe Storage
+              - listitem [ref=e149]:
+                - img [ref=e150]
+                - text: 200 Email Accounts
+              - listitem [ref=e152]:
+                - img [ref=e153]
+                - text: 40 MySQL Databases
+              - listitem [ref=e155]:
+                - img [ref=e156]
+                - text: Free SSL Certificates
+            - button "Buy Now" [ref=e158]
+      - generic [ref=e160]:
+        - heading "More Features Coming Soon" [level=2] [ref=e161]
+        - paragraph [ref=e162]: Website Builder, Why Choose Us, and Contact sections will be implemented here.
+    - contentinfo [ref=e163]:
+      - generic [ref=e165]:
+        - generic [ref=e166]:
+          - heading "Contact Us" [level=3] [ref=e167]
+          - paragraph [ref=e168]: Randburg, Johannesburg
+          - paragraph [ref=e169]: South Africa
+          - paragraph [ref=e170]: "Email: support@afrilink.co.za"
+        - generic [ref=e171]:
+          - heading "Quick Links" [level=3] [ref=e172]
+          - list [ref=e173]:
+            - listitem [ref=e174]:
+              - link "Hosting Plans" [ref=e175] [cursor=pointer]:
+                - /url: /#hosting
+            - listitem [ref=e176]:
+              - link "About Us" [ref=e177] [cursor=pointer]:
+                - /url: /#features
+            - listitem [ref=e178]:
+              - link "Client Area" [ref=e179] [cursor=pointer]:
+                - /url: https://www.afrilinktelecon.co.za/whmcs-bridge/?ccce=clientarea
+      - paragraph [ref=e182]: © 2025 Afrilink Telecoms (Pty) Ltd. All rights reserved.
+  - button "Open Next.js Dev Tools" [ref=e188] [cursor=pointer]:
+    - img [ref=e189] [cursor=pointer]
+  - alert [ref=e193]
+```
